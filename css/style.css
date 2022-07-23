@@ -1,0 +1,268 @@
+
+/*logo and nav styling*/
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+}
+
+nav {
+    width: 70%;
+    padding: 1%;
+}
+
+ul {
+    width: 50%;
+    margin-left: auto;
+}
+
+
+/*About Me styling*/
+
+.opener{
+    display: flex;
+    flex-direction: row;
+}
+
+.opener img{
+    max-width: 20%;
+    max-height: 20%;
+    padding: 10px;
+}
+
+.opener h1{
+    padding:10px;
+}
+
+.heroImg {
+    height:450px;
+    padding: 50px;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.heroImg button {
+    margin-top: 20px;
+}
+
+
+/*My Skills styling using CSS Flex*/
+
+.mySkills h1 {
+    margin-top: 50px;
+}
+
+.flexContainer {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flexContainer .skill {
+    width:33%;
+    background-color: lightgray;
+    margin:10px;
+    padding:2%;
+}
+
+.mySkills h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mySkills h3{
+    text-align: center;
+}
+
+.flexContainer img{
+    max-width: 150px;
+    max-height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+}
+
+
+/*My Work styling using CSS Grids*/
+
+.myWork {
+    margin-bottom: 50px;
+}
+.myWork h1 {
+    text-align:center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.workGrid {
+    display:grid;
+    grid-template-columns:230px 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "imgPlannr descripPlannr descripPlannr  descripPlannr"
+        "imgClarity descripClarity descripClarity descripClarity"
+        "imgFh4k descripFh4k descripFh4k descripFh4k"
+    ;
+}
+
+.workGrid img{
+    max-height:350px;
+    width: auto;
+    max-width: 180px;
+    padding:10px;
+    margin-left:20px;
+}
+
+.imgPlannr{
+    grid-area: imgPlannr;
+    background-color:#CDD3E6;
+    margin-bottom: 20px;
+}
+
+.descripPlannr{
+    grid-area: descripPlannr;
+    background-color:#CDD3E6;
+    margin-bottom: 20px;
+}
+
+.imgClarity{
+    grid-area: imgClarity;
+    background-color:#CDD3C8;
+    margin-bottom: 20px;
+}
+
+.descripClarity{
+    grid-area: descripClarity;
+    background-color:#CDD3C8;
+    margin-bottom: 20px;
+}
+
+.imgFh4k {
+    grid-area:imgFh4k;
+    background-color:#D1BECA;
+    margin-bottom: 20px;
+}
+
+.descripFh4k{
+    grid-area: descripFh4k;
+    background-color:#D1BECA;
+    margin-bottom: 20px;
+}
+
+.wordGrid .portfolio {
+    padding: 20px;
+    vertical-align: center;
+    height: 30px;
+}
+
+
+/*Footer styling*/
+
+footer {
+    background-color: #373738;
+    padding: 1%;
+    text-align: center;
+}
+
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+   color: white;
+}
+
+
+/*Media Query for My Skills (Flex)*/
+
+@media only screen and (max-width: 600px) {
+
+    .heroImg {
+        max-width: 400px;
+        height: 500px;
+    }
+
+    .flexContainer {
+        display:flex;
+        flex-direction:column;
+    }
+
+    .flexContainer .skill {
+        width: 100%;
+    }
+
+    .flexContainer img{
+        margin-top:10px;
+    }
+
+    .workGrid {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px 320px 400px 360px 380px 340px;
+        grid-template-areas:
+            "imgPlannr"
+            "descripPlannr"
+            "imgClarity" 
+            "descripClarity"
+            "imgFh4k"
+            "descripFh4k"
+        ;
+    }
+
+    .workGrid img{
+        max-height:350px;
+        max-width: 180px;
+        padding:10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:50%;
+    }
+
+    .imgPlannr{
+        grid-area: imgPlannr;
+        margin-bottom: 20px;
+        background-color:#FFFFFF;
+    }
+
+    .descripPlannr{
+        padding: 20px;
+        grid-area: descripPlannr;
+        background-color:#CDD3E6;
+        margin-bottom: 20px;
+    }
+
+    .imgClarity{
+        grid-area: imgClarity;
+        margin-bottom: 20px;
+        background-color:#FFFFFF;
+    }
+
+    .descripClarity{
+        padding: 20px;
+        grid-area: descripClarity;
+        background-color:#CDD3C8;
+        margin-bottom: 20px;
+    }
+
+    .imgFh4k {
+        grid-area:imgFh4k;
+        margin-bottom: 20px;
+        background-color:#FFFFFF;
+    }
+
+    .descripFh4k{
+        padding: 20px;
+        grid-area: descripFh4k;
+        background-color:#D1BECA;
+        margin-bottom: 20px;
+    }
+
+}
