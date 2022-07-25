@@ -50,6 +50,8 @@ ul {
 
 .heroImg button {
     margin-top: 20px;
+    color: white;
+    background-color: #728196 ;
 }
 
 
@@ -72,6 +74,17 @@ ul {
     padding:2%;
 }
 
+.flexContainer .skill:hover {
+    background-color: lightgray;
+}
+
+.flexContainer .skill:hover {
+    background-color: #BCBBBB;
+    box-shadow: 0 2px 6px 6px lightgrey;
+    transform:translateX(2px);
+    transform: translateY(2px);
+}
+
 .mySkills h1{
     text-align: center;
     margin-bottom: 20px;
@@ -89,7 +102,6 @@ ul {
     margin-right: auto;
     width:50%;
 }
-
 
 /*My Work styling using CSS Grids*/
 
@@ -157,10 +169,18 @@ ul {
     margin-bottom: 20px;
 }
 
-.wordGrid .portfolio {
-    padding: 20px;
-    vertical-align: center;
-    height: 30px;
+.myWork .portfolio {
+    text-align: center;
+    color: white;
+    background-color: #728196 ;
+    display: inline-block;
+    padding:10px;
+}
+
+
+.workButton {
+    color: white;
+    background-color: #728196 ;
 }
 
 
